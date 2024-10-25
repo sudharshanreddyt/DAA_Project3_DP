@@ -1,7 +1,7 @@
 # DAA Project 3
-Sudharshan Reddy Thammaiahgari (G32541018) `<br>`
-Ali Irtaza (G47541925) `<br>`
-Michael Womack (G33045586) `<br>`
+Sudharshan Reddy Thammaiahgari (G32541018)\
+Ali Irtaza (G47541925)\
+Michael Womack (G33045586)\
 Saurabh S R (G27918127)
 
 # 1. Box Stacking
