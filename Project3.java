@@ -32,16 +32,9 @@ public class Project3 {
 
         Arrays.sort(allRotations, new Comparator<Box>() {
             public int compare(Box b1, Box b2) {
-                return b2.width - b1.width;
+                return b2.width * b2.depth - b1.width * b1.depth;
             }
         });
-
-        // for (int i = 0; i < n; i++) {
-        // System.out.println(
-        // "Width : " + allRotations[i].width + " Depth : " + allRotations[i].depth + "
-        // Height : "
-        // + allRotations[i].height);
-        // }
 
         int maxHeight[] = new int[n];
         for (int i = 0; i < n; i++) {
@@ -50,7 +43,7 @@ public class Project3 {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < i; j++) {
-                if (allRotations[j].depth > allRotations[i].depth) {
+                if (allRotations[j].width > allRotations[i].width && allRotations[j].depth > allRotations[i].depth) {
                     maxHeight[i] = Math.max(maxHeight[i], maxHeight[j] + allRotations[i].height);
                 }
             }
